@@ -34,5 +34,7 @@ contact.addEventListener('click', () => {
     seccion4.classList.remove('inactive')
     aboutMe.setAttribute('style', 'color: #03178c;')
     colorItem.setAttribute('style', 'background-color: #f2f2f2;')
+
 })
+
 

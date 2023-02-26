@@ -16,3 +16,8 @@ const seccion1 = d.querySelector('.seccion1')
 const seccion2 = d.querySelector('.seccion2')
 const seccion3 = d.querySelector('.seccion3')
 const seccion4 = d.querySelector('.seccion4')
+
+//Seccion contacto
+
+const mail = d.querySelector('.sendMail')
+const wsp = d.querySelector('.sendWsp')

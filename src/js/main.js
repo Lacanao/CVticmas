@@ -5,7 +5,7 @@ const api = axios.create({
     headers: { 'Content-type': 'application/json;charset=utf-8' },
 });
 const userInfo = d.querySelector(".get-info");
-
+const apiWsp = 'https://api.whatsapp.com/send?phone='
 async function getUser() {
     const { data } = await api('?results=1');
     const users = data.results;
@@ -25,9 +25,17 @@ async function getUser() {
 
         userInfo.append(userImg, userName, userJob)
 
+        mail.setAttribute('href', 'mailto:' + `${user.email}`)
+        mail.textContent = user.email;
+
+        wsp.setAttribute('href', `${apiWsp}${user.cell}`)
+        wsp.textContent = user.cell;
     });
 }
 
+
 getUser()
+
+
 
 
