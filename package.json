@@ -1,0 +1,17 @@
+{
+  "name": "proyecto-final-ticmas-cv",
+  "version": "1.0.0",
+  "description": "Proyecto Final Argentina Programa 4.0 TICMAS",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cv",
+    "ticmas",
+    "argentina",
+    "programa"
+  ],
+  "author": "Martin Emilio Coronel",
+  "license": "ISC"
+}
