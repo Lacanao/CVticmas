@@ -1,4 +1,4 @@
-const d = document;
+
 const api = axios.create({
     method: 'GET',
     baseURL: 'https://randomuser.me/api/',

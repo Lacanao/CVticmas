@@ -38,19 +38,23 @@ li {
   background-color: var(--var-color-5);
 }
 .get-info img {
-  margin-top: 20px;
+  margin-top: 16px;
   border-radius: 50%;
   border: 1px solid black;
   object-fit: cover;
 }
-.get-info h1,
-.get-info p {
+.get-info h1 {
   color: var(--var-color-1);
   margin: 10px 0;
 }
+.get-info p {
+  color: var(--var-color-1);
+  margin: 0 0 10px 0;
+}
 
 /* Navegación */
-
+.active {
+}
 .nav-container {
   background-color: var(--var-color-5);
 }
@@ -89,12 +93,13 @@ li {
 .sectionsContainer {
   background-color: var(--var-color-4);
   border-top: 1px solid var(--var-color-1);
+  height: 432px;
 }
 
 .container {
-  margin-left: 32px;
-  padding-top: 8px;
-  width: 80%;
+  width: 100%;
+  margin: auto;
+  height: inherit;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -110,4 +115,35 @@ li {
   width: 100%;
   border-top: 1px solid var(--var-color-2);
   padding: 8px 0 8px 0;
+}
+
+/* Sección contacto */
+i {
+  font-size: 36px;
+}
+
+.contactContainer {
+  margin: 0 auto;
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.gitHub,
+.wsp,
+.linkedin,
+.email {
+  display: flex;
+  align-items: center;
+}
+
+.gitHub span a,
+.wsp span a,
+.linkedin span a,
+.email span a {
+  margin-left: 24px;
+  color: var(--var-color-5);
 }

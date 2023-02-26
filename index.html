@@ -19,15 +19,15 @@
         <div class="get-info"></div>
         <nav class="nav-container">
             <ul class="nav-list">
-                <li class="nav-list-item"><a id="aboutMe" href="#">Sobre Mi</a></li>
-                <li class="nav-list-item"><a id="experience" href="#">Experiencia</a></li>
-                <li class="nav-list-item"><a id="education" href="#">Educación</a></li>
-                <li class="nav-list-item"><a id="contact" href="#">Contacto</a></li>
+                <li class="nav-list-item active"><a class="item1" href="#aboutMe">Sobre Mi</a></li>
+                <li class="nav-list-item"><a class="item2" href="#experience">Experiencia</a></li>
+                <li class="nav-list-item"><a class="item3" href="#education">Educación</a></li>
+                <li class="nav-list-item"><a class="item4" href="#contact">Contacto</a></li>
             </ul>
         </nav>
 
     </header>
-    <section id="aboutMe" class="sectionsContainer">
+    <section id="aboutMe" class="sectionsContainer seccion1">
         <div class="container">
             <div class="paragraph">
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad sunt eos a asperiores esse id molestiae
@@ -53,7 +53,7 @@
             </div>
         </div>
     </section>
-    <section id="experience" class="sectionsContainer inactive">
+    <section id="experience" class="sectionsContainer inactive seccion2">
         <div class="container">
             <div class="experienceContainer">
                 <h3>Trabajo</h3>
@@ -67,7 +67,7 @@
                     aliquid?</p>
             </div>
     </section>
-    <section id="education" class="sectionsContainer inactive">
+    <section id="education" class="sectionsContainer inactive seccion3">
         <div class="container">
             <div class="educationContainer">
                 <h3>Universidad Nacional de Catamarca</h3>
@@ -78,13 +78,35 @@
                     aliquid?</p>
             </div>
     </section>
+    <section id="contact" class="sectionsContainer inactive seccion4">
+        <div class="container">
+            <div class="contactContainer">
+                <div class="wsp">
+                    <i class="bi bi-whatsapp"></i><span><a class="sendWsp" href="" target="_blank"></a></span>
+                </div>
+                <div class="linked">
+                    <i class="bi bi-linkedin"></i><span><a class="goLinkedin" href="https://ar.linkedin.com/"
+                            target="_blank"></a></span>
+                </div>
+                <div class="email">
+                    <i class="bi bi-envelope"></i><span><a class="sendMail" href="" target="_blank"></a></span>
+                </div>
+                <div class="gitHub">
+                    <i class="bi bi-github"></i><span><a class="goGitHub" href="https://github.com/"
+                            target="_blank">GitHub</a></span>
+                </div>
+
+            </div>
+    </section>
     <footer style="margin-top: 16px;">
         <p style="font-size: 12px; text-align: center;">Design whit &#x1F49C; for Martin Emilio Coronel</p>
     </footer>
 
 
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="src/js/nodes.js"></script>
     <script src="src/js/main.js"></script>
+    <script src="src/js/navigation.js"></script>
 
 </body>
 
