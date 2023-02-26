@@ -14,6 +14,7 @@
 
 a {
   text-decoration: none;
+  font-size: 4vw;
 }
 
 a:hover {
@@ -68,6 +69,14 @@ li {
   margin-bottom: -1px;
 }
 
+.nav-list-item:first-child {
+  background-color: var(--var-color-4);
+}
+
+.nav-list-item:first-child a {
+  color: var(--var-color-5);
+}
+
 .nav-list-item:hover {
   background-color: var(--var-color-4);
 }
@@ -77,3 +86,28 @@ li {
 }
 
 /* Secciones */
+.sectionsContainer {
+  background-color: var(--var-color-4);
+  border-top: 1px solid var(--var-color-1);
+}
+
+.container {
+  margin-left: 32px;
+  padding-top: 8px;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.paragraph {
+  margin: 8px 0;
+}
+
+.habilites,
+.others {
+  width: 100%;
+  border-top: 1px solid var(--var-color-2);
+  padding: 8px 0 8px 0;
+}
