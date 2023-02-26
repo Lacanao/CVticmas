@@ -1,3 +1,5 @@
+
+
 aboutMe.addEventListener('click', () => {
     seccion1.classList.remove('inactive')
 
