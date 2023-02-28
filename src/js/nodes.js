@@ -1,23 +1,26 @@
 // Document
 const d = document;
 
-// Lista
-const colorItem = d.querySelector('.active')
-// Enlaces
+// Botones
 
-const aboutMe = d.querySelector('.item1')
-const experience = d.querySelector('.item2')
-const education = d.querySelector('.item3')
-const contact = d.querySelector('.item4')
+const btnAbout = d.querySelector('.btnAbout')
+const btnExperience = d.querySelector('.btnExperience')
+const btnEducation = d.querySelector('.btnEducation')
+const btnContact = d.querySelector('.btnContact')
 
 //Secciones
 
-const seccion1 = d.querySelector('.seccion1')
-const seccion2 = d.querySelector('.seccion2')
-const seccion3 = d.querySelector('.seccion3')
-const seccion4 = d.querySelector('.seccion4')
+const aboutMe = d.querySelector('.containerAboutMe')
+const experience = d.querySelector('.containerExperience')
+const education = d.querySelector('.containerEducation')
+const contact = d.querySelector('.containerContact')
 
-//Seccion contacto
+//Enlaces
 
 const mail = d.querySelector('.sendMail')
 const wsp = d.querySelector('.sendWsp')
+
+//MediaQuery
+
+const mql = window.matchMedia('(min-width: 1024px)');
+const mql2 = window.matchMedia('(max-width: 1024px)');

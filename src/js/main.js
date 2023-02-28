@@ -1,6 +1,6 @@
 
 const api = axios.create({
-    method: 'GET',
+
     baseURL: 'https://randomuser.me/api/',
     headers: { 'Content-type': 'application/json;charset=utf-8' },
 });
@@ -34,7 +34,9 @@ async function getUser() {
 }
 
 
+
 getUser()
+
 
 
 

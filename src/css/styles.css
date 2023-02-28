@@ -1,164 +1,200 @@
-:root {
-  --var-color-1: #03178c;
-  --var-color-2: #034aa6;
-  --var-color-3: #035aa6;
-  --var-color-4: #89b3d9;
-  --var-color-5: #f2f2f2;
-}
-
-* {
+body {
   margin: 0;
   padding: 0;
   font-family: "Raleway", sans-serif;
 }
-
 a {
   text-decoration: none;
-  font-size: 4vw;
+  color: #ffffff;
 }
-
-a:hover {
-  cursor: pointer;
+i {
+  font-size: 32px;
 }
-
-a:visited {
+li {
+  list-style: none;
   text-decoration: none;
 }
 
-li {
-  list-style: none;
+h3,
+ul {
+  margin: 0;
+  padding: 0;
 }
+
 .inactive {
-  display: none;
+  display: none !important;
 }
 
 /* Header */
 
+header {
+  background-color: #0d1321;
+}
+
 .get-info {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  background-color: var(--var-color-5);
-}
-.get-info img {
-  margin-top: 16px;
-  border-radius: 50%;
-  border: 1px solid black;
-  object-fit: cover;
-}
-.get-info h1 {
-  color: var(--var-color-1);
-  margin: 10px 0;
-}
-.get-info p {
-  color: var(--var-color-1);
-  margin: 0 0 10px 0;
+  align-items: center;
 }
 
-/* Navegación */
-.active {
+.get-info .user-img {
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  object-fit: cover;
+  margin-top: 16px;
 }
-.nav-container {
-  background-color: var(--var-color-5);
+
+.get-info h1 {
+  margin: 16px 0 0 0;
+  color: #ffffff;
 }
-.nav-container ul {
+
+.get-info p {
+  color: #ffffff;
+}
+
+/* Header nav */
+.nav-list {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  padding: 0;
+  margin-bottom: 0;
 }
 
-.nav-list-item {
-  /* border: 1px solid var(--var-color-1); */
-  border-bottom: none;
-  border-radius: 8px 8px 0 0;
+.nav-list button {
   padding: 6px;
-  background-color: var(--var-color-5);
-  /* margin-bottom: -1px; */
+  border: none;
+  font-size: 4vw;
+  border-radius: 6px 6px 0 0;
+  background-color: #ffffff;
 }
 
-.nav-list-item:first-child {
-  background-color: var(--var-color-4);
-}
-
-.nav-list-item:first-child a {
-  color: var(--var-color-5);
-}
-
-.nav-list-item:hover {
-  background-color: var(--var-color-4);
-}
-
-.nav-list-item a:hover {
-  color: var(--var-color-5);
-}
-
-/* Secciones */
-.sectionsContainer {
-  background-color: var(--var-color-4);
-  /* border-top: 1px solid var(--var-color-1); */
-  height: 432px;
-  border-radius: 2px 2px 0 0;
-}
+/* About me section */
 
 .container {
+  background-color: #ffffff;
   width: 100%;
-  margin: auto;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.aboutMe,
+.experience,
+.education,
+.contact {
   height: 100%;
+  width: 80%;
+}
+
+.aboutMe {
+  /* border-top: 1px solid black; */
+  background-color: inherit;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: flex-start;
 }
 
-.paragraph {
-  margin: 8px 0;
+.description {
+  width: inherit;
+}
+.description h3 {
+  margin-top: 16px;
+}
+.qualities {
+  display: inherit;
+  flex-direction: column;
+  align-items: start;
+  width: inherit;
+  margin-bottom: 16px;
 }
 
-.habilites,
-.others {
-  width: 100%;
-  border-top: 1px solid var(--var-color-2);
-  padding: 8px 0 8px 0;
+.skills {
+  margin-bottom: 12px;
 }
 
-/* Sección contacto */
-i {
-  font-size: 36px;
+:is(.skills, .tecno) ul {
+  margin-top: 10px;
 }
 
-.contactContainer,
-.experienceContainer,
-.aboutContainer {
-  margin: 0 auto;
-  width: 80%;
-  height: 100%;
+/* Experience section */
+.experience,
+.education {
+  background-color: inherit;
+  padding-top: 16px;
+}
+
+:is(.experience, .education) p {
+  margin: 4px 0 8px 0;
+}
+
+.education {
+  background-color: inherit;
+}
+.contact {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  align-items: flex-start;
+  align-items: start;
+  background-color: inherit;
 }
 
-.educationContainer {
-  margin: 24px auto 0 auto;
-  width: 80%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
+.contact a {
+  color: #000000;
 }
 
-.gitHub,
 .wsp,
 .linked,
-.email {
+.email,
+.gitHub {
+  width: 200px;
   display: flex;
   align-items: center;
+  justify-content: start;
 }
 
-.gitHub span a,
-.wsp span a,
-.linked span a,
-.email span a {
-  margin-left: 24px;
-  color: var(--var-color-5);
+.contact span {
+  margin-left: 16px;
+}
+
+@media screen and (max-width: 1024px) {
+  :is(.aboutMe, .experience, .education, .contact) .title {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  nav {
+    display: none;
+  }
+  main {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 4px;
+  }
+
+  .column-left {
+    grid-area: 1 / 1 / 2 / 2;
+    border: 1px solid #0d1321;
+    border-radius: 4px;
+  }
+
+  .column-right {
+    grid-area: 1 / 2 / 2 / 3;
+  }
+
+  .experience,
+  .education {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-evenly;
+    border-bottom: 1px solid #0d1321;
+  }
 }

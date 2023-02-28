@@ -9,121 +9,125 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-
     <link rel="stylesheet" href="/src/css/styles.css">
     <title>Proyecto Final CV</title>
 </head>
 
 <body>
-    <header>
-        <div class="get-info"></div>
-        <nav class="nav-container">
-            <ul class="nav-list">
-                <li class="nav-list-item active"><a class="item1" href="#aboutMe">Sobre Mi</a></li>
-                <li class="nav-list-item"><a class="item2" href="#experience">Experiencia</a></li>
-                <li class="nav-list-item"><a class="item3" href="#education">Educación</a></li>
-                <li class="nav-list-item"><a class="item4" href="#contact">Contacto</a></li>
-            </ul>
-        </nav>
+    <main>
+        <div class="column-left">
+            <header>
 
-    </header>
-    <section id="aboutMe" class="sectionsContainer seccion1">
-        <div class="container">
-            <div class="aboutContainer">
-                <div class="paragraph">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad sunt eos a asperiores esse id
-                        molestiae
-                        aliquid? Aperiam culpa pariatur voluptates natus expedita, est dolorum, soluta laudantium
-                        corporis
-                        laborum mollitia.</p>
+                <div class="get-info">
                 </div>
-
-                <div class="habilites">
-                    <h3>Habilidades</h3>
-                    <ul>
-                        <li>hola</li>
-                        <li>hola</li>
-                        <li>hola</li>
+                <nav>
+                    <ul class="nav-list">
+                        <li><button type="button" class="btnAbout">Sobre mí</button></li>
+                        <li><button type="button" class="btnExperience">Experiencia</button></li>
+                        <li><button type="button" class="btnEducation">Educación</button></li>
+                        <li><button type="button" class="btnContact">Contacto</button></li>
                     </ul>
-                </div>
-                <div class="others">
-                    <h3>Otros</h3>
-                    <ul>
-                        <li>chau</li>
-                        <li>chau</li>
-                        <li>chau</li>
-                    </ul>
-                </div>
-            </div>
+                </nav>
 
+            </header>
+            <section class="container containerAboutMe">
+                <div class="aboutMe">
+                    <div class="description">
+                        <h3 class="title">SOBRE MI</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis consequatur explicabo
+                            quibusdam
+                            reprehenderit eaque corrupti ratione dolore ea eius commodi itaque cupiditate consequuntur,
+                            ducimus
+                            libero quos adipisci quae pariatur quod?</p>
+                    </div>
+                    <div class="qualities">
+                        <div class="skills">
+                            <h3>Habilidades</h3>
+                            <ul>
+                                <li>Pro activo</li>
+                                <li>Trabajo en equipo</li>
+                                <li>Comunicación efectiva</li>
+                            </ul>
+                        </div>
+
+                        <div class="tecno">
+                            <h3>Tecnologías</h3>
+                            <ul>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
         </div>
-    </section>
-    <section id="experience" class="sectionsContainer inactive seccion2">
-        <div class="container">
-            <div class="experienceContainer">
-                <div>
-                    <h3>Trabajo</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad sunt eos a asperiores esse id
-                        molestiae
-                        aliquid?</p>
+        <div class="column-right">
+            <section class="container containerExperience inactive">
+                <div class="experience">
+                    <h3 class="title">EXPERIENCIA</h3>
+                    <div>
+                        <h3>Trabajo 1</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing eli</p>
+                    </div>
+                    <div>
+                        <h3>Trabajo 2</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing eli</p>
+                    </div>
+                    <div>
+                        <h3>Trabajo 3</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                    </div>
                 </div>
-                <div>
-                    <h3>Trabajo</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad sunt eos a asperiores esse id
-                        molestiae
-                        aliquid?</p>
-                </div>
-                <div>
-                    <h3>Trabajo</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad sunt eos a asperiores esse id
-                        molestiae
-                        aliquid?</p>
-                </div>
+            </section>
+            <section class="container containerEducation inactive">
+                <div class="education">
+                    <h3 class="title">EDUCACION</h3>
+                    <div>
+                        <h3>Universidad 1</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing eli</p>
+                    </div>
+                    <div>
+                        <h3>Universidad 2</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing eli</p>
+                    </div>
+                    <div>
+                        <h3>Cursos</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                    </div>
 
-            </div>
-    </section>
-    <section id="education" class="sectionsContainer inactive seccion3">
-        <div class="container">
-            <div class="educationContainer">
-                <div style='margin-bottom: 24px'>
-                    <h3>Universidad Nacional de Catamarca</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad sunt eos a asperiores esse id
-                        molestiae
-                        aliquid?</p>
-                </div>
-                <div>
-                    <h3>Universidad Fasta</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad sunt eos a asperiores esse id
-                        molestiae
-                        aliquid?</p>
-                </div>
 
-            </div>
-    </section>
-    <section id="contact" class="sectionsContainer inactive seccion4">
-        <div class="container">
-            <div class="contactContainer">
-                <div class="wsp">
-                    <i class="bi bi-whatsapp"></i><span><a class="sendWsp" href="" target="_blank"></a></span>
-                </div>
-                <div class="linked">
-                    <i class="bi bi-linkedin"></i><span><a class="goLinkedin" href="https://ar.linkedin.com/"
-                            target="_blank">LinkedIn</a></span>
-                </div>
-                <div class="email">
-                    <i class="bi bi-envelope"></i><span><a class="sendMail" href="" target="_blank"></a></span>
-                </div>
-                <div class="gitHub">
-                    <i class="bi bi-github"></i><span><a class="goGitHub" href="https://github.com/"
-                            target="_blank">GitHub</a></span>
-                </div>
 
-            </div>
-    </section>
-    <footer style="margin-top: 16px;">
-        <p style="font-size: 12px; text-align: center;">Design whit &#x1F49C; for Martin Emilio Coronel</p>
+
+                </div>
+            </section>
+            <section class="container containerContact inactive">
+
+                <div class="contact">
+                    <h3 class="title">CONTACTO</h3>
+                    <div class="wsp">
+                        <i class="bi bi-whatsapp"></i><span><a class="sendWsp" href="" target="_blank"></a></span>
+                    </div>
+                    <div class="linked">
+                        <i class="bi bi-linkedin"></i><span><a class="goLinkedin" href="https://ar.linkedin.com/"
+                                target="_blank">LinkedIn</a></span>
+                    </div>
+                    <div class="email">
+                        <i class="bi bi-envelope"></i><span><a class="sendMail" href="" target="_blank"></a></span>
+                    </div>
+                    <div class="gitHub">
+                        <i class="bi bi-github"></i><span><a class="goGitHub" href="https://github.com/"
+                                target="_blank">GitHub</a></span>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p style="text-align: center;">Design whit &#128153; for Martín Emilio Coronel</p>
     </footer>
-
 
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="src/js/nodes.js"></script>
