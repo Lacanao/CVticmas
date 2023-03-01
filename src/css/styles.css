@@ -166,13 +166,6 @@ header {
   :is(.aboutMe, .experience, .education, .contact) .title {
     display: none;
   }
-
-  footer {
-    margin-top: 1rem;
-    position: absolute;
-    bottom: 0;
-    left: 35%;
-  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -192,6 +185,12 @@ header {
     border-radius: 4px;
   }
 
+  .column-left .container {
+    height: auto;
+  }
+  .column-left .container .aboutMe {
+    height: auto;
+  }
   .column-right {
     grid-area: 1 / 2 / 2 / 3;
   }
